@@ -32,3 +32,11 @@ function Parser.parse(input)
         else
             return nil, "Take what?"
         end
+    elseif command == "quit" or command == "exit" then
+        return "quit"
+    else
+        return nil, "I don't understand that command."
+    end
+end
+
+return Parser
